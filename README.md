@@ -2,6 +2,6 @@
 
 ### 文档
 
-#### [git安装和配置](https://github.com/zhuimeng-hstc/test_1/blob/main/install_and_config/git_install_and_config.md)
+#### [git安装和配置](install_and_config/git_install_and_config.md)
 
-#### [git使用](https://github.com/zhuimeng-hstc/test_1/blob/main/guide/guide.md)
+#### [git使用](guide/guide.md)
