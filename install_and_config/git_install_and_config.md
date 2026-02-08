@@ -8,19 +8,19 @@
 
 - 不建议勾选
 
-  ![image-20260204114636396](https://github.com/gozhuimeng/test_1/blob/develop/install_and_config/img/image-20260204114636396.png)
+  ![image-20260204114636396](./img/image-20260204114636396.png)
 
 - 有VScode可以换成VScode，但是实际很少用到，默认保持vim也不影响使用
 
-  ![image-20260204114730229](https://github.com/gozhuimeng/test_1/blob/develop/install_and_config/img/image-20260204114730229.png)
+  ![image-20260204114730229](./img/image-20260204114730229.png)
 
 - 这一步可以选择第二项，即使用main做为默认分支，选择第一项master也可以，但是不建议修改成其他内容，github等平台只认main和master
 
-  ![image-20260204114950580](https://github.com/gozhuimeng/test_1/blob/develop/install_and_config/img/image-20260204114950580.png)
+  ![image-20260204114950580](./img/image-20260204114950580.png)
 
 - 查看发布说明，可以取消
 
-  ![image-20260204115335153](https://github.com/gozhuimeng/test_1/blob/develop/install_and_config/img/image-20260204115335153.png)
+  ![image-20260204115335153](./img/image-20260204115335153.png)
 
 ## 初始化
 
@@ -30,7 +30,7 @@
 git --version
 ```
 
-![image-20260204115414310](https://github.com/gozhuimeng/test_1/blob/develop/install_and_config/img/image-20260204115414310.png)
+![image-20260204115414310](./img/image-20260204115414310.png)
 
 ### git命令不存在(<span style="color:red">凡是可以正常使用的请跳过这一步</span>)
 
@@ -38,15 +38,15 @@ git --version
 
 如果出现下图或者类似于不存在的报错，则可能是安装失败或者配置环境变量的时候出现问题
 
-![image-20260204114329135](https://github.com/gozhuimeng/test_1/blob/develop/install_and_config/img/image-20260204114329135.png)
+![image-20260204114329135](./img/image-20260204114329135.png)
 
 打开git安装目录，默认是`C:\Program Files\Git`，应有如下文件，如果缺失文件或者没有内容，请重新安装
 
-![image-20260204115530105](https://github.com/gozhuimeng/test_1/blob/develop/install_and_config/img/image-20260204115530105.png)
+![image-20260204115530105](./img/image-20260204115530105.png)
 
 复制目录，`右键此电脑->属性->高级系统设置->环境变量->双击path`，尝试在窗口中查找git路径，如果不存在，加上`git安装路径\cmd`，如图
 
-![image-20260204115913438](https://github.com/gozhuimeng/test_1/blob/develop/install_and_config/img/image-20260204115913438.png)
+![image-20260204115913438](./img/image-20260204115913438.png)
 
 <span style="color:red">最重要的一步，记得依次点击`确定`，没有确认等于不会保存操作</span>
 
@@ -59,7 +59,7 @@ git config user.name
 git config user.email
 ```
 
-![image-20260204120731068](https://github.com/gozhuimeng/test_1/blob/develop/install_and_config/img/image-20260204120731068.png)
+![image-20260204120731068](./img/image-20260204120731068.png)
 
 没有安装过git的设备安装应该如图一样没有返回内容，通过以下命令设置用户名和邮箱（用户名随意，和github上的用户名一不一样无所谓，<span style="color:red">但是邮箱一定要和github上注册用的邮箱是一样的，github只认邮箱，不认名</span>)：
 
@@ -72,7 +72,7 @@ git config --globle user.email '邮箱'
 
 设置后重新执行查询命令，应该是可以看到设置的用户名和邮箱的
 
-![image-20260204142014929](https://github.com/gozhuimeng/test_1/blob/develop/install_and_config/img/image-20260204142014929.png)
+![image-20260204142014929](./img/image-20260204142014929.png)
 
 ## 配置SSH密钥（<span style="color:red">很重要</span>）
 
@@ -84,27 +84,27 @@ git config --globle user.email '邮箱'
 ssh-keygen
 ```
 
-![image-20260204143920174](https://github.com/gozhuimeng/test_1/blob/develop/install_and_config/img/image-20260204143920174.png)
+![image-20260204143920174](./img/image-20260204143920174.png)
 
 然后打开资源文件管理器，在地址栏输入`%userprofile%/.ssh`或找到自己用户目录下的.ssh文件夹
 
-![image-20260204144401677](https://github.com/gozhuimeng/test_1/blob/develop/install_and_config/img/image-20260204144401677.png)
+![image-20260204144401677](./img/image-20260204144401677.png)
 
 检查目录下，将会存在生成的密钥对文件，打开其中的`.pub`公钥文件，如果使用默认加密算法生成的公钥应该是如图所示格式：
 
-![image-20260204144537337](https://github.com/gozhuimeng/test_1/blob/develop/install_and_config/img/image-20260204144537337.png)
+![image-20260204144537337](./img/image-20260204144537337.png)
 
 复制密钥对并打开[Github SSH and GPG keys设置页面](https://github.com/settings/keys)
 
-![image-20260204144947451](https://github.com/gozhuimeng/test_1/blob/develop/install_and_config/img/image-20260204144947451.png)
+![image-20260204144947451](./img/image-20260204144947451.png)
 
-![image-20260204145032841](https://github.com/gozhuimeng/test_1/blob/develop/install_and_config/img/image-20260204145032841.png)
+![image-20260204145032841](./img/image-20260204145032841.png)
 
 如图所示，填写title和key，点击`Add SSH key`添加密钥
 
-![image-20260204145146615](https://github.com/gozhuimeng/test_1/blob/develop/install_and_config/img/image-20260204145146615.png)
+![image-20260204145146615](./img/image-20260204145146615.png)
 
-![image-20260204145411999](https://github.com/gozhuimeng/test_1/blob/develop/install_and_config/img/image-20260204145411999.png)
+![image-20260204145411999](./img/image-20260204145411999.png)
 
 填写完成将会返回这个页面，并可以看到已经添加的密钥和对应的hash，密钥一般上传不会出错，但是可以和前面的创建密钥步骤的SHA256比对密钥完整性，如果前几个字母都一样就证明密钥是完整的（非必须）
 
@@ -124,11 +124,11 @@ ssh -T git@github.com
 Hi 用户名(Github)! You've successfully authenticated, but GitHub does not provide shell access.
 ```
 
-![image-20260204153941594](https://github.com/gozhuimeng/test_1/blob/develop/install_and_config/img/image-20260204153941594.png)
+![image-20260204153941594](./img/image-20260204153941594.png)
 
 如图，如果出现如权限被拒绝请进入下一步
 
-![image-20260204150725106](https://github.com/gozhuimeng/test_1/blob/develop/install_and_config/img/image-20260204150725106.png)
+![image-20260204150725106](./img/image-20260204150725106.png)
 
 #### 配置ssh
 
@@ -146,7 +146,7 @@ Host github.com
 	IdentityFile C:\Users\meng\.ssh\github_ed25519
 ```
 
-![image-20260204153751862](https://github.com/gozhuimeng/test_1/blob/develop/install_and_config/img/image-20260204153751862.png)
+![image-20260204153751862](./img/image-20260204153751862.png)
 
 配置完成之后返回上一步校验连接（记得保存文件再去尝试）
 
