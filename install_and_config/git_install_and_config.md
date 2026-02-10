@@ -152,4 +152,4 @@ Host github.com
 
 如果配置的Host不是`github.com`，则需要使用`ssh -T <Host>`，例如：
 
-![image-20260204154146654](https://github.com/gozhuimeng/test_1/blob/develop/install_and_config/img/image-20260204154146654.png)
+![image-20260204154146654](./img/image-20260204154146654.png)
